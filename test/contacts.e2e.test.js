@@ -55,45 +55,7 @@ describe('Testing the route api/contacts', () => {
 			done();
 		});
 	});
-	// describe('should handle post request', () => {
-	//     it('should return 201 status create contact', async (done) => {
-	//         const res = await request(app)
-	//             .post('/api/contacts')
-	//             .set('Authorization', `Bearer ${token}`)
-	//             .send(newContact)
-	//             .set('Accept', 'application/json')
 
-	//         expect(res.status).toEqual(201)
-	//         expect(res.body).toBeDefined()
-	//         idNewContact = res.body.data.contact._id
-	//         done()
-	//     })
-	//     it('should return 400 status for wrong field', async (done) => {
-	//         const res = await request(app)
-	//             .post('/api/contacts')
-	//             .set('Authorization', `Bearer ${token}`)
-	//             .send({ ...newContact, test:"test"})
-	//             .set('Accept', 'application/json')
-
-	//         expect(res.status).toEqual(400)
-	//         expect(res.body).toBeDefined()
-	//         idNewContact = res.body.data.contact._id
-	//         done()
-	//     })
-	//     it.skip('should return 400 status without required field name', async (done) => {
-	//         const res = await request(app)
-	//             .post('/api/contacts')
-	//             .set('Authorization', `Bearer ${token}`)
-	//             .send({ name:"bob", phone:'0503858784'})
-	//             .set('Accept', 'application/json')
-
-	//         expect(res.status).toEqual(400)
-	//         expect(res.body).toBeDefined()
-	//         idNewContact = res.body.data.contact._id
-	//         done()
-	//     })
-
-	// })
 	describe('Testing create new contact', () => {
 		it.skip('Add contact success should return 201 status', async (done) => {
 			const res = await request(app)
